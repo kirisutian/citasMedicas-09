@@ -44,6 +44,12 @@
 			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
 		</dependency>
 
+        <dependency>
+            <groupId>com.christian</groupId>
+            <artifactId>commons</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
 		<dependency>
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>

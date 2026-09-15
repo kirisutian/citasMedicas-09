@@ -16,10 +16,17 @@ spring:
               filters:
                 - StripPrefix=2
 
-            - id: servicio-b
-              uri: lb://servicio-b
+            - id: citas
+              uri: lb://citas
               predicates:
-                - Path=/api/b/**
+                - Path=/api/citas/**
+              filters:
+                - StripPrefix=2
+
+            - id: pacientes
+              uri: lb://pacientes
+              predicates:
+                - Path=/api/pacientes/**
               filters:
                 - StripPrefix=2
     loadbalancer:
